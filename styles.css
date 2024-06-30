@@ -70,7 +70,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 1rem; /* Reduced margin to bring headings closer */
+    margin-left: 2rem; /* Restored original spacing */
 }
 
 header nav ul li a {
