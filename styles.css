@@ -20,7 +20,7 @@ body {
 
 header, footer {
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: grey; /* Changed text color to grey */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,13 +70,18 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 2rem;
+    margin-left: 1rem; /* Reduced margin to bring headings closer */
 }
 
 header nav ul li a {
-    color: white;
+    color: grey; /* Changed text color to grey */
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+    color: white; /* Changed text color to white on hover */
 }
 
 header .social-icons,
@@ -88,12 +93,19 @@ footer .social-media {
 header .social-icons a,
 footer .social-media a {
     margin-left: 1rem;
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 header .social-icons img,
 footer .social-media img {
-    height: 20px;
-    width: 20px;
+    height: 24px; /* Increased icon size */
+    width: 24px; /* Increased icon size */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+header .social-icons img:hover,
+footer .social-media img:hover {
+    filter: brightness(2); /* Brighter on hover */
 }
 
 main {
@@ -135,13 +147,21 @@ main {
     margin-top: 2rem;
 }
 
+footer p, footer a {
+    color: grey; /* Changed text color to grey */
+}
+
+footer p:hover, footer a:hover {
+    color: white; /* Changed text color to white on hover */
+}
+
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: -100%;
-        width: 100%;
+        width: 200px; /* Narrower dropdown menu */
         background-color: rgba(0, 0, 0, 0.9);
         transition: 0.5s;
     }
