@@ -175,3 +175,15 @@ main {
     }
 
     header nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    header nav ul.nav-active {
+        left: 0;
+    }
+
+    header nav .menu-toggle {
+        display: flex;
+    }
+}
