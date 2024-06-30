@@ -39,8 +39,7 @@ footer {
     bottom: 0;
 }
 
-header .logo img, 
-footer .social-media img {
+header .logo img {
     height: 48px;
     width: auto;
 }
@@ -84,37 +83,45 @@ header nav ul li a:hover {
     color: white; /* Changed text color to white on hover */
 }
 
-header .social-icons,
-footer .social-media {
+header .social-icons {
     display: flex;
     align-items: center;
 }
 
-header .social-icons a,
-footer .social-media a {
+header .social-icons a {
     margin-left: 1rem;
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-header .social-icons img,
-footer .social-media img {
+header .social-icons img {
+    height: 32px; /* Increased icon size in header by 4 pixels */
+    width: 32px; /* Increased icon size in header by 4 pixels */
     filter: grayscale(100%); /* Make icons grey */
     transition: filter 0.3s; /* Smooth transition for hover effect */
 }
 
-header .social-icons img {
-    height: 27px; /* Increased icon size in header */
-    width: 27px; /* Increased icon size in header */
-}
-
-header .social-icons img:hover,
-footer .social-media img:hover {
+header .social-icons img:hover {
     filter: none; /* Change back to original color on hover */
 }
 
 footer .social-media img {
     height: 15px; /* Decreased icon size in footer */
     width: 15px; /* Decreased icon size in footer */
+    filter: grayscale(100%); /* Make icons grey */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+footer .social-media img:hover {
+    filter: none; /* Change back to original color on hover */
+}
+
+footer p, footer a {
+    color: grey; /* Changed text color to grey */
+    font-size: 0.9rem; /* Reduced text size in footer */
+}
+
+footer p:hover, footer a:hover {
+    color: white; /* Changed text color to white on hover */
 }
 
 main {
@@ -156,14 +163,6 @@ main {
     margin-top: 2rem;
 }
 
-footer p, footer a {
-    color: grey; /* Changed text color to grey */
-}
-
-footer p:hover, footer a:hover {
-    color: white; /* Changed text color to white on hover */
-}
-
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -176,15 +175,3 @@ footer p:hover, footer a:hover {
     }
 
     header nav ul li {
-        margin: 1rem 0;
-        text-align: center;
-    }
-
-    header nav ul.nav-active {
-        left: 0;
-    }
-
-    header nav .menu-toggle {
-        display: flex;
-    }
-}
