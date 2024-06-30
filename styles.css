@@ -18,24 +18,33 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: fixed;
     width: 100%;
     top: 0;
-}
-
-header {
-    top: 0;
-}
-
-footer {
-    bottom: 0;
-    position: relative;
 }
 
 header .logo img, 
 footer .social-media img {
     height: 48px;
     width: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header nav .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
 header nav ul {
@@ -100,4 +109,29 @@ footer .social-media img {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     margin-top: 80px; /* Adjusted for fixed header */
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.9);
+        transition: 0.5s;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    header nav ul.nav-active {
+        left: 0;
+    }
+
+    header nav .menu-toggle {
+        display: flex;
+    }
 }
