@@ -98,14 +98,23 @@ footer .social-media a {
 
 header .social-icons img,
 footer .social-media img {
-    height: 24px; /* Increased icon size */
-    width: 24px; /* Increased icon size */
+    filter: grayscale(100%); /* Make icons grey */
     transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+header .social-icons img {
+    height: 27px; /* Increased icon size in header */
+    width: 27px; /* Increased icon size in header */
 }
 
 header .social-icons img:hover,
 footer .social-media img:hover {
-    filter: brightness(2); /* Brighter on hover */
+    filter: none; /* Change back to original color on hover */
+}
+
+footer .social-media img {
+    height: 15px; /* Decreased icon size in footer */
+    width: 15px; /* Decreased icon size in footer */
 }
 
 main {
