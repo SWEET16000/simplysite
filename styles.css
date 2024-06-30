@@ -39,8 +39,12 @@ footer {
     bottom: 0;
 }
 
-header .logo img, 
-footer .social-media img {
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
     height: 48px;
     width: auto;
 }
@@ -48,6 +52,8 @@ footer .social-media img {
 header nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 header nav .menu-toggle {
@@ -84,37 +90,37 @@ header nav ul li a:hover {
     color: white; /* Changed text color to white on hover */
 }
 
-header .social-icons,
-footer .social-media {
+header .social-icons {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
-header .social-icons a,
-footer .social-media a {
-    margin-left: 1rem;
+header .social-icons a {
+    margin-left: 0.5rem;
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-header .social-icons img,
-footer .social-media img {
+header .social-icons img {
+    height: 30px; /* Increased icon size in header */
+    width: 30px; /* Increased icon size in header */
     filter: grayscale(100%); /* Make icons grey */
     transition: filter 0.3s; /* Smooth transition for hover effect */
 }
 
-header .social-icons img {
-    height: 27px; /* Increased icon size in header */
-    width: 27px; /* Increased icon size in header */
-}
-
-header .social-icons img:hover,
-footer .social-media img:hover {
+header .social-icons img:hover {
     filter: none; /* Change back to original color on hover */
 }
 
 footer .social-media img {
     height: 15px; /* Decreased icon size in footer */
     width: 15px; /* Decreased icon size in footer */
+    filter: grayscale(100%); /* Make icons grey */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+footer .social-media img:hover {
+    filter: none; /* Change back to original color on hover */
 }
 
 main {
