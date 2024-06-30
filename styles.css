@@ -5,7 +5,13 @@
     font-family: Arial, sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background: url('images/Black-metal-4k.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -91,8 +97,15 @@ footer .social-media img {
     width: 20px;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .hero {
-    height: calc(100vh - 140px); /* Adjusted for fixed header and footer */
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +133,7 @@ footer .social-media img {
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
-    margin-top: 80px; /* Adjusted for fixed header */
+    margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
