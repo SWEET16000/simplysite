@@ -9,17 +9,29 @@ body {
     background: url('images/Black-metal-4k.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    padding-top: 80px; /* Adjusted for fixed header */
+    padding-bottom: 60px; /* Adjusted for fixed footer */
 }
 
 header, footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+}
+
+header {
     top: 0;
+}
+
+footer {
+    bottom: 0;
 }
 
 header .logo img, 
@@ -80,7 +92,7 @@ footer .social-media img {
 }
 
 .hero {
-    height: 80vh;
+    height: calc(100vh - 140px); /* Adjusted for fixed header and footer */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +130,7 @@ footer .social-media img {
         top: 60px;
         left: -100%;
         width: 100%;
-        background-color: rgba(51, 51, 51, 0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         transition: 0.5s;
     }
 
