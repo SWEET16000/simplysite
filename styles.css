@@ -90,38 +90,23 @@ header .social-icons {
 
 header .social-icons a {
     margin-left: 1rem;
-    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 header .social-icons img {
     height: 32px; /* Increased icon size in header by 4 pixels */
     width: 32px; /* Increased icon size in header by 4 pixels */
-    filter: grayscale(100%); /* Make icons grey */
-    transition: filter 0.3s; /* Smooth transition for hover effect */
-}
-
-header .social-icons img:hover {
-    filter: none; /* Change back to original color on hover */
+    filter: none; /* Make icons white */
 }
 
 footer .social-media img {
     height: 15px; /* Decreased icon size in footer */
     width: 15px; /* Decreased icon size in footer */
-    filter: grayscale(100%); /* Make icons grey */
-    transition: filter 0.3s; /* Smooth transition for hover effect */
-}
-
-footer .social-media img:hover {
-    filter: none; /* Change back to original color on hover */
+    filter: none; /* Make icons white */
 }
 
 footer p, footer a {
     color: grey; /* Changed text color to grey */
     font-size: 0.9rem; /* Reduced text size in footer */
-}
-
-footer p:hover, footer a:hover {
-    color: white; /* Changed text color to white on hover */
 }
 
 main {
