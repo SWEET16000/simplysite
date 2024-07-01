@@ -89,6 +89,7 @@ header nav ul li a:hover {
 header .social-icons {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 header .social-icons a {
@@ -192,10 +193,8 @@ main {
     }
 
     header .social-icons {
-        position: absolute;
-        top: 50%;
-        right: 1rem;
-        transform: translateY(-50%);
+        position: static; /* Ensure icons stay in view */
+        transform: none;
     }
 
     header .logo {
