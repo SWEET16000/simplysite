@@ -49,6 +49,7 @@ header nav {
     align-items: center;
     flex-grow: 1;
     justify-content: center;
+    position: relative;
 }
 
 header nav .menu-toggle {
@@ -172,9 +173,9 @@ main {
     header nav ul {
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: -100%;
-        width: 200px; /* Narrower dropdown menu */
+        top: 100%; /* Position dropdown just below the toggle button */
+        left: 0;
+        width: 100%; /* Ensure dropdown width is consistent */
         background-color: rgba(0, 0, 0, 0.9);
         transition: 0.5s;
     }
