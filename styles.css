@@ -188,4 +188,8 @@ main {
     header nav .menu-toggle {
         display: flex;
     }
+
+    header .social-icons {
+        display: none; /* Hide icons on smaller screens */
+    }
 }
