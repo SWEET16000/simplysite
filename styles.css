@@ -90,6 +90,7 @@ header nav ul li a:hover {
 header .social-icons {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 header .social-icons a {
@@ -191,10 +192,9 @@ main {
 
     header nav .menu-toggle {
         display: flex;
-        position: relative;
-        right: auto;
-        top: auto;
-        transform: none;
+        position: absolute;
+        left: 50%; /* Centered */
+        transform: translateX(-50%); /* Centered */
     }
 
     header .social-icons {
