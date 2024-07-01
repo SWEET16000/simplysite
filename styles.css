@@ -194,7 +194,7 @@ main {
 
     header nav ul.nav-active {
         display: block;
-        max-height: 200px; /* Set a max-height to animate the dropdown */
+        max-height: 300px; /* Increase max-height to ensure all items are visible */
         opacity: 1;
     }
 
