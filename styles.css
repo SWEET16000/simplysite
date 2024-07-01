@@ -47,6 +47,8 @@ header .logo img {
 header nav {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 header nav .menu-toggle {
@@ -190,6 +192,20 @@ main {
     }
 
     header .social-icons {
-        display: none; /* Hide icons on smaller screens */
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+    }
+
+    header .logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav {
+        order: 1;
+        width: 100%;
     }
 }
