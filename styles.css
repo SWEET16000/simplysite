@@ -73,14 +73,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: grey; /* Changed text color to grey */
+    color: white; /* White text color initially */
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.3s, font-weight 0.3s; /* Smooth transition for hover effect */
 }
 
 header nav ul li a:hover {
-    color: white; /* Changed text color to white on hover */
+    color: grey; /* Grey text color on hover */
+    font-weight: bold; /* Bold text on hover */
 }
 
 header .social-icons {
@@ -95,13 +96,29 @@ header .social-icons a {
 header .social-icons img {
     height: 32px; /* Increased icon size in header by 4 pixels */
     width: 32px; /* Increased icon size in header by 4 pixels */
-    filter: none; /* Make icons white */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+header .social-icons img.icon-hover:hover {
+    content: url("icons/discord-fill-svgrepo-com-grey.svg"); /* Change to grey icon on hover */
+}
+
+header .social-icons img.icon-hover:hover {
+    content: url("icons/twitter-fill-svgrepo-com-grey.svg"); /* Change to grey icon on hover */
 }
 
 footer .social-media img {
     height: 15px; /* Decreased icon size in footer */
     width: 15px; /* Decreased icon size in footer */
-    filter: none; /* Make icons white */
+    transition: filter 0.3s; /* Smooth transition for hover effect */
+}
+
+footer .social-media img.icon-hover-footer:hover {
+    content: url("icons/discord-fill-svgrepo-com.svg"); /* Change to white icon on hover */
+}
+
+footer .social-media img.icon-hover-footer:hover {
+    content: url("icons/twitter-fill-svgrepo-com.svg"); /* Change to white icon on hover */
 }
 
 footer p, footer a {
