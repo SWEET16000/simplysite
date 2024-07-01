@@ -193,14 +193,14 @@ main {
     }
 
     header .social-icons {
-        position: static; /* Ensure icons stay in view */
-        transform: none;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
     }
 
     header .logo {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+        display: none; /* Hide logo on smaller screens */
     }
 
     header nav {
