@@ -170,6 +170,10 @@ main {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 1rem; /* Add padding to the header on mobile view */
+    }
+    
     header nav ul {
         flex-direction: column;
         position: absolute;
