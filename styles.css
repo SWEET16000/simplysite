@@ -178,15 +178,16 @@ main {
         width: 100%; /* Ensure dropdown width is consistent */
         background-color: rgba(0, 0, 0, 0.9);
         transition: 0.5s;
+        display: none; /* Hide the dropdown by default */
+    }
+
+    header nav ul.nav-active {
+        display: flex; /* Show the dropdown when active */
     }
 
     header nav ul li {
         margin: 1rem 0;
         text-align: center;
-    }
-
-    header nav ul.nav-active {
-        left: 0;
     }
 
     header nav .menu-toggle {
