@@ -193,22 +193,23 @@ main {
     header nav .menu-toggle {
         display: flex;
         position: absolute;
-        right: 1rem;
+        right: 2rem; /* Adjusted to ensure no overlap with social icons */
         top: 50%;
         transform: translateY(-50%);
     }
 
     header .social-icons {
         position: absolute;
-        right: 3rem; /* Add space for the toggle button */
+        right: 2rem;
         top: 50%;
         transform: translateY(-50%);
     }
 
     header .logo {
-        flex: 1;
-        display: flex;
-        justify-content: flex-start;
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     header nav {
