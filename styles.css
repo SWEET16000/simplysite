@@ -33,6 +33,7 @@ header, footer {
 
 header {
     top: 0;
+    height: 64px; /* Set a fixed height for the header */
 }
 
 footer {
@@ -171,9 +172,10 @@ main {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem; /* Add padding to the header on mobile view */
+        height: 64px; /* Fixed height for header on mobile view */
+        padding: 0 1rem; /* Padding for the header on mobile view */
     }
-    
+
     header nav ul {
         flex-direction: column;
         position: absolute;
