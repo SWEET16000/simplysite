@@ -179,21 +179,23 @@ main {
     header nav ul {
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Position dropdown just below the toggle button */
-        left: 0;
-        width: 100%; /* Ensure dropdown width is consistent */
+        top: 64px; /* Adjusted to position the dropdown just below the header */
+        right: 1rem;
         background-color: rgba(0, 0, 0, 0.9);
         transition: 0.5s;
         display: none; /* Hide the dropdown by default */
+        width: auto; /* Slim dropdown */
+        padding: 0.5rem;
+        border-radius: 5px; /* Add border radius for better appearance */
     }
 
     header nav ul.nav-active {
-        display: flex; /* Show the dropdown when active */
+        display: block; /* Show the dropdown when active */
     }
 
     header nav ul li {
-        margin: 1rem 0;
-        text-align: center;
+        margin: 0.5rem 0;
+        text-align: left; /* Align text to the left */
     }
 
     header nav .menu-toggle {
