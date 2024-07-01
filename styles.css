@@ -193,8 +193,9 @@ main {
     header nav .menu-toggle {
         display: flex;
         position: absolute;
-        left: 50%; /* Centered */
-        transform: translateX(-50%); /* Centered */
+        right: 5rem; /* Adjusted to be halfway between the logo and social icons */
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     header .social-icons {
